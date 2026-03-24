@@ -1,0 +1,57 @@
+import React from 'react'
+
+const Carousel = () => {
+  return (
+       <section >
+         <div class="col-md-12">
+            {/* <!-- a division containing carosel content  --> */}
+            <div class="carousel slide" id="mycarousel" data-bs-ride="carousel">
+               {/* <!-- a division containiong images  --> */}
+                <div class="carousel-inner ">
+                  {/* <!-- div with image 1 --> */}
+                  
+                   <div class="carousel-item active">
+                      <img src="images/car4.jpg" alt="slide 1" style={
+                        {height:"400px",width:"100%", objectFit:"cover"}  } />
+                  </div>
+                  {/* <!-- div with image 2 --> */}
+                  <div class="carousel-item">
+                      <img src="images/car5.jpg" alt="slide 2" style={
+                        {height:"400px",width:"100%", objectFit:"cover"} }/>
+                  </div>
+                  
+                  {/* <!-- image 3 --> */}
+                  <div class="carousel-item">
+                     <img src="images/car6.webp" alt="slide3"  style={
+                        {height:"400px",width:"100%", objectFit:"cover"} }/>
+                     </div>
+                     {/* <!-- image 4 --> */}
+                     <div class="carousel-item">
+                     <img src="images/car7.png" alt="slide4"  style={
+                        {height:"400px",width:"100%", objectFit:"cover"} }/>
+               </div>
+                  
+               </div>
+               {/* <!-- previous control  --> */}
+           
+               <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-danger"></span>
+               </a>
+               {/* <!-- next control  --> */}
+               <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-danger"></span>
+               </a>
+
+            </div>
+         </div>
+         
+
+
+
+
+
+        </section>
+  )
+}
+
+export default Carousel

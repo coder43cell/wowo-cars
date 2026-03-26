@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 {/* <!-- a nav whith navbar content  --> */}
                 <nav class="navbar navbar-expand-md bg-light">
-                    <a href="" class="navbar-brand text-warning "> wowo cars</a>
+                    <a href="/" class="navbar-brand text-warning "> wowo cars</a>
                     <button class="navbar-toggler" data-bs-target="#navbarcollapse" data-bs-toggle="collapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>

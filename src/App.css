@@ -7,8 +7,7 @@
 }
 .get-container {
   background-image: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('/public/images/carlogo3.avif'); /* from public/images */
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),    url('/public/images/carlogo3.jpeg'); /* from public/images */
 
   background-size: cover;
   background-position: center;
@@ -21,7 +20,7 @@
 .signin-container {
   background-image: 
    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('/public/images/carlogo3.avif'); /* from public/images */
+    url('/public/images/carlogo3.jpeg'); /* from public/images */
 
   background-size: cover;
   background-position: center;
@@ -34,8 +33,7 @@
 .add-container {
   background-image: 
    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    
-    url('/public/images/carlogo3.avif'); /* from public/images */
+        url('/public/images/carlogo3.jpeg'); /* from public/images */
 
   background-size: cover;
   background-position: center;
@@ -49,7 +47,7 @@
   background-image: 
    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     
-    url('/public/images/carlogo3.avif'); /* from public/images */
+    url('/public/images/carlogo3.jpeg'); /* from public/images */
 
   background-size: cover;
   background-position: center;

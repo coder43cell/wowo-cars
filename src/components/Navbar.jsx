@@ -24,12 +24,14 @@
                     </button>
                     {/* <!-- a division containing links --> */}
                     <div class="collapse navbar-collapse " id="navbarcollapse">
-                        <div class="navbar-nav ">
+                        <div class="navbar-nav " >
                             <a href="/" class="nav-link active text-white">home</a>
                             <a href="/addproduct" class="nav-link text-white">Add product</a>
+                                </div >
+                            <div class="navbar-nav ms-auto " >
                             {user?(
                                 <>
-                                <span className="nav-link ">Welcome {user.username}</span>
+                                <span className="nav-link text-white">Welcome {user.username}</span> <br />
                                 <button onClick={logout} className="btn btn-danger">
                                     logout
                                 </button>
@@ -40,8 +42,8 @@
                               <a href="/signup" class="nav-link text-white"> signup</a>
                               </>
                             )}
+                            </div>
 
-                        </div>
                     </div>
                 </nav>
             </div>

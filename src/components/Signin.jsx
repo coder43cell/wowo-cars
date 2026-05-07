@@ -45,10 +45,11 @@ const Signin=()=>{
        
     }
     return(
+        <div className="signin-container">
        <div className="row mt-4 justify-content-center">
-        <div className="col-md-6 card shadow p-4">
+        <div className="col-md-6   p-4">
            <form action="" onSubmit={handlesubmit}>
-            <h1 className="text-center">Sign in</h1>
+            <h1 className="text-center text-warning">Sign in</h1>
              {/* bind the states  */}
           <h2 className="text-warning">{loading}</h2>
           <h2 className="text-success">{success}</h2>
@@ -58,9 +59,10 @@ const Signin=()=>{
             <input type="text" className="form-control" placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)}/><br />
             <input type="text" className="form-control" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)}/><br />
             <button type="submit" className="btn btn-primary w-100">Sign in</button><br />
-            <p>Don't have an account?<Link to="/signup">Sign up</Link></p>
+            <p className="text-white">Don't have an account?<Link to="/signup">Sign up</Link></p>
             </form>
         </div>
+       </div>
        </div>
     )
 }

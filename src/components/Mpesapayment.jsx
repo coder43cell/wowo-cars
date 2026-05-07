@@ -34,7 +34,7 @@ const Mpesapayment=()=>{
     return(
        <div className="row justify-content-center">
         <h1 className="text-success text-center">Make payment-Lipa na MPESA</h1>
-        <div className="col-md-8 card shadow p-4" >
+        <div className="col-md-8 shadow p-4" >
          <img src={imagepath+singleproduct.product_photo} alt="" style={{height:"250px",objectFit:"contain"}}/>
 
 

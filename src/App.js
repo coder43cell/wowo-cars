@@ -12,14 +12,15 @@ import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
 import Navbar from './components/Navbar';
 
+
 function App() {
 return (
   <BrowserRouter>
-    <div className="App">
+    <div className="App bg-black">
       {/* navbar goes here  */}
       <Navbar/>
-      <header className="App-header" >
-        <h1>Welcome to wowo cars</h1>
+      <header className="App-header bg-black" >
+        <marquee behavior="" direction="left"><h1>Welcome to AutoVibe</h1></marquee>
        
       </header>
       <nav >

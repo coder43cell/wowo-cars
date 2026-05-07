@@ -5,6 +5,60 @@
   min-height: 100vh; 
   
 }
+.get-container {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/public/images/carlogo3.avif'); /* from public/images */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+  min-height: 100vh;
+  padding: 20px;
+}
+.signin-container {
+  background-image: 
+   linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/public/images/carlogo3.avif'); /* from public/images */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+  min-height: 100vh;
+  padding: 20px;
+}
+.add-container {
+  background-image: 
+   linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    
+    url('/public/images/carlogo3.avif'); /* from public/images */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+  min-height: 100vh;
+  padding: 20px;
+}
+.signup-container {
+  background-image: 
+   linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    
+    url('/public/images/carlogo3.avif'); /* from public/images */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+  min-height: 100vh;
+  padding: 20px;
+}
 
 
 .App-logo {
@@ -28,6 +82,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;

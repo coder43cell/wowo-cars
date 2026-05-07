@@ -10,6 +10,7 @@ const Signup=()=>{
   const[loading,setLoading]=useState("")
   const[success,setSuccess]=useState("")
   const[error,setError]=useState("")
+  const[strength,setStrength]=useState("")
 
   // function to handle submit 
   const handlesubmit=async (e)=>{
@@ -34,10 +35,23 @@ const Signup=()=>{
     }
 
   }
+   const checkPasswordStrength=(password)=>{
+        if(password.length<4){
+            setStrength("weak");
+        }
+        else  if(password.length<8){
+            setStrength("medium");
+        }
+        else{
+            setStrength("Strong");
+        }
+    };
+
     return(
+      <div className="signup-container">
       <div className="row mt-4  justify-content-center">
-        <div className="col-md-6 card shadow p-4">
-          <h1>Sign up</h1>
+        <div className="col-md-6   p-4 text-center">
+          <h1 className="text-warning">Sign up</h1>
           {/* bind the states  */}
           <h2 className="text-warning">{loading}</h2>
           <h2 className="text-success">{success}</h2>
@@ -46,15 +60,35 @@ const Signup=()=>{
           <form action="" onSubmit={handlesubmit}>
               <input type="text" className="form-control" placeholder="Enter username " onChange={(e)=>setUsername(e.target.value)}/><br />
               <input type="text" className="form-control" placeholder="Enter Email" onChange={(e)=>setEmail(e.target.value)}/><br />
-                <input type="password" className="form-control" placeholder="password" onChange={(e)=>setPassword(e.target.value)}/><br />
+                <input type="password" className="form-control" placeholder="password" onChange={(e)=>{setPassword(e.target.value);
+                  checkPasswordStrength(e.target.value);
+                }}/> 
+                <br />
+                {password&&(
+                  <p
+                  style={{
+                    color: 
+                    strength ==="weak"
+                    ? "red"
+                    : strength ==="medium"
+                    ? "orange"
+                    :"green",
+                  }}
+                  >
+                    password Strength:{strength}
+
+                  </p>
+                
+                )}
                 <input type="number" className="form-control" placeholder="Enter phone"
                 onChange={(e)=>setPhone(e.target.value)} /><br />
                 <button type="submit"className="btn btn-primary w-100">sign up</button><br/><br />
-               <p>Already have an account?<Link to="/signin">sign in</Link></p> 
+               <p className="text-white">Already have an account?<Link to="/signin">sign in</Link></p> 
 
             </form>
         </div>
 
+      </div>
       </div>
     )
 

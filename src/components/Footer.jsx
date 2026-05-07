@@ -3,12 +3,15 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>  
-       <section class="row bg-dark p-4">
+       <section class="row p-4">
          {/* <!-- child 1 --> */}
          <div class="col-md-4">
             <h2 class="text-center text-white">About us</h2>
-            <p class="text-white text-center">Tumaini collections is the home of luxury in africa.
-               We bring the african culture to your homestead through art.
+            <p class="text-white text-center">At AutoVibe, we don’t just sell cars—we help you step into the life you’ve worked for.
+
+We know that a luxury car is never just about getting from one place to another. It’s about how it makes you feel when you turn the key. It’s the confidence, the presence, and the quiet reminder that you’ve earned something special.
+
+That’s why we carefully choose every vehicle we offer. Each car is handpicked for its quality, performance, and elegance—because you deserve nothing less than excellence.
             </p>
 
          </div>

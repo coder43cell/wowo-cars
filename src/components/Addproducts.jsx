@@ -40,14 +40,16 @@ const Addproduct=()=>{
          setError(error.message)
             setLoading("")
         
-    }
-
-
-
+        }
+        
+        
+        
     }
     return(
+        <div className="add-container">
+
         <div className="row mt-2 justify-content-center">
-            <div className="col-md-6 card shadow p-4">
+            <div className="col-md-6  p-4">
            <h1 className="text-warning">Add products</h1>
              {/* bind the states  */}
           <h2 className="text-warning">{loading}</h2>
@@ -62,6 +64,7 @@ const Addproduct=()=>{
                 <input type="file" accept="image/*" className="form-control" placeholder="No file chosen" onChange={(e)=>setProductPhoto(e.target.files[0])} /><br />
                 <button type="submit"className="btn btn-primary w-100">Add product</button>
             </form>
+        </div>
         </div>
         </div>
     )

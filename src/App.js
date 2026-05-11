@@ -19,10 +19,23 @@ return (
     <div className="App bg-black">
       {/* navbar goes here  */}
       <Navbar/>
-      <header className="App-header bg-black" >
-        <marquee behavior="" direction="left"><h1>Welcome to AutoVibe</h1></marquee>
-       
-      </header>
+      <header className="App-header bg-black">
+  <div
+    style={{
+      whiteSpace: "nowrap",
+      overflow: "hidden",
+    }}
+  >
+    <h1
+      style={{
+        display: "inline-block",
+        animation: "scrollText 10s linear infinite",
+      }}
+    >
+      Welcome to AutoVibe
+    </h1>
+  </div>
+</header>
       <nav >
         <Link to="/addproduct" className='btn btn-info btn-sm m-1'>Addproduct</Link>
         <Link to="/" className='btn btn-success btn-sm m-1'>Get products</Link>    

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import BrandTicker from "./Ticker";
+import ChatBot from "./ChatBot";
 const Getproduct=()=>{
     
     let navigate = useNavigate();
@@ -91,6 +92,14 @@ const Getproduct=()=>{
                     </button>
                 </div>
             )}
+            <div style={{
+  position: "fixed",
+  bottom: "20px",
+  right: "20px",
+  zIndex: 1000,
+}}>
+  <ChatBot />
+</div>
 
             <Footer/>
        </div>
